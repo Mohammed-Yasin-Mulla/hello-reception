@@ -26,6 +26,23 @@ body {
   text-align: center;
 }
 
+/* Background  */
+.bg-top {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.bg-bottom {
+  z-index: -1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* --------- */
+
 .pricing {
   display: flex;
   align-items: center;
@@ -100,7 +117,7 @@ input:checked + .slider:before {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-width:  300px;
+  min-width: 300px;
   min-height: 400px;
   background-color: white;
   border-radius: 15px;
@@ -115,7 +132,6 @@ input:checked + .slider:before {
 .side-card {
   min-width: 325px;
 }
-
 
 .card-price {
   font-size: 50px;
@@ -161,7 +177,7 @@ input:checked + .slider:before {
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
-  border: 1px solid ;
+  border: 1px solid;
   font-size: var(--FontSize);
 }
 
@@ -170,7 +186,6 @@ input:checked + .slider:before {
   color: hsl(237, 63%, 64%);
   background-color: transparent;
   border: 1px solid hsl(237, 63%, 64%);
-
 }
 
 .primary-card .card-price-button {

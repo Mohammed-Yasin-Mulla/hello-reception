@@ -7,11 +7,15 @@ function App() {
   const [toggle, setToggle] = useState<"annually" | "monthly">("annually");
 
   return (
-    <div className="main-page">
-      <h1>Our Pricing</h1>
-      <ToggleSwitch setToggle={setToggle}/>
-      <PriceCards toggle={toggle} />
-    </div>
+      <>
+        <img src='/bg-top.svg' alt='background' className="bg-top" />
+        <img src='/bg-bottom.svg' alt='background' className="bg-bottom"/>
+            <div className="main-page">
+        <h1>Our Pricing</h1>
+        <ToggleSwitch setToggle={setToggle}/>
+        <PriceCards toggle={toggle} />
+            </div>
+      </>
   );
 }
 
