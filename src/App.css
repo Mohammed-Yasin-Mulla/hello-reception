@@ -46,14 +46,14 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background:  linear-gradient(hsl(236, 72%, 79%) , hsl(237, 63%, 64%)) ;
+  background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
   -webkit-transition: 0.4s;
   transition: 0.4s;
   border-radius: 34px;
 }
 
 .slider:hover {
-  background: linear-gradient(hsl(236, 72%, 79%, 0.5) , hsl(237, 63%, 64%,0.5)) ;
+  background: linear-gradient(hsl(236, 72%, 79%, 0.5), hsl(237, 63%, 64%, 0.5));
 }
 
 .slider:before {
@@ -70,7 +70,7 @@ body {
 }
 
 input:checked + .slider {
-  background-color: var(--VeryLightGrayishBlue)
+  background-color: var(--VeryLightGrayishBlue);
 }
 
 input:checked + .slider:before {
@@ -79,4 +79,84 @@ input:checked + .slider:before {
   transform: translateX(26px);
 }
 
+/* Price Cards */
 
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 400px;
+  background-color: white;
+  border-radius: 15px;
+  /* box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1); */
+  /* margin: 0 1rem; */
+}
+
+.primary-card {
+  background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  color: white;
+}
+
+
+
+.card-price {
+  font-size: 50px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.card-price-dollar {
+  font-size: 35px;
+}
+
+.card-price-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 1rem;
+  width: 80%;
+  list-style: none;
+  padding: 0;
+}
+
+.card-price-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: var(--LightGrayishBlue);
+  padding: 12px 4px;
+}
+
+.card-price-button {
+  margin-top: 0.5rem;
+  background-color: transparent;
+  border: 1px solid hsl(237, 63%, 64%);
+  color: hsl(237, 63%, 64%);
+  padding: 10px 32px;
+  width: 80%;
+  border-radius: 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.primary-card .card-price-button {
+  background-color: transparent;
+  border: 1px solid var(--VeryLightGrayishBlue);
+  color: var(--VeryLightGrayishBlue)
+}
+
+/* -------------- */
