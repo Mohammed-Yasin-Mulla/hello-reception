@@ -188,6 +188,7 @@ input:checked + .slider:before {
   display: inline-block;
   cursor: pointer;
   border: 1px solid;
+  font-weight: bold;
   font-size: var(--FontSize);
 }
 
@@ -199,14 +200,16 @@ input:checked + .slider:before {
 }
 
 .primary-card .card-price-button {
-  background-color: transparent;
-  border: 1px solid var(--VeryLightGrayishBlue);
-  color: var(--VeryLightGrayishBlue);
+  background: none;
+  background-color: var(--VeryLightGrayishBlue) !important;
+  border: 1px solid var(--VeryLightGrayishBlue) !important;
+  color: hsl(237, 63%, 64%) !important;
+  
 }
 
 .primary-card .card-price-button:hover {
-  background-color: var(--VeryLightGrayishBlue);
-  color: hsl(237, 63%, 64%);
+  background-color: transparent !important;
+  color: var(--VeryLightGrayishBlue) !important;
 }
 /* -------------- */
 
