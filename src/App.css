@@ -26,6 +26,13 @@ body {
   text-align: center;
 }
 
+.pricing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
 .switch {
   position: relative;
   display: inline-block;
