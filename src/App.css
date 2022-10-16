@@ -100,17 +100,20 @@ input:checked + .slider:before {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 300px;
-  height: 400px;
+  min-width:  300px;
+  min-height: 400px;
   background-color: white;
   border-radius: 15px;
-  /* box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1); */
-  /* margin: 0 1rem; */
 }
 
 .primary-card {
   background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
   color: white;
+  min-height: 450px;
+}
+
+.side-card {
+  min-width: 325px;
 }
 
 
