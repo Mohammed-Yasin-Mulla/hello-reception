@@ -199,3 +199,22 @@ input:checked + .slider:before {
   color: hsl(237, 63%, 64%);
 }
 /* -------------- */
+
+
+/* adding media query for mobile */
+@media screen and (max-width: 375px) {
+  .card-container {
+    flex-direction: column;
+  }
+  .card {
+    margin: 1rem;
+  }
+  .primary-card  {
+    min-height: 450px; 
+    min-width: 325px;
+  }
+  .side-card {
+    min-width: 325px;
+    min-height: 450px;
+  }
+}
