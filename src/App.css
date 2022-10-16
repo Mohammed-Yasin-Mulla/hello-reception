@@ -1,38 +1,82 @@
-.App {
+:root {
+  /* COLORS */
+  --Desktop: 1440px;
+  --Mobile: 375px;
+  /* PRIMARY */
+  /* --LinearGradient: hsl(236, 72%, 79%) to hsl(237, 63%, 64%); */
+
+  /* NEUTRAL */
+  --VeryLightGrayishBlue: hsl(240, 78%, 98%);
+  --LightGrayishBlue: hsl(234, 14%, 74%);
+  --GrayishBlue: hsl(233, 13%, 49%);
+  --DarkGrayishBlue: hsl(232, 13%, 33%);
+
+  /* TYPOGRAPHY */
+  /* BODY COPY */
+  --FontSize: 15px;
+  /* BODY Copy */
+  --FontFamily: "Montserrat";
+  --FontWeight: 700;
+}
+
+body {
+  background-color: var(--VeryLightGrayishBlue);
+  font-family: var(--FontFamily), "Roboto", sans-serif;
+  font-size: var(--FontSize);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:  linear-gradient(hsl(236, 72%, 79%) , hsl(237, 63%, 64%)) ;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 34px;
 }
 
-.App-link {
-  color: #61dafb;
+.slider:hover {
+  background: linear-gradient(hsl(236, 72%, 79%, 0.5) , hsl(237, 63%, 64%,0.5)) ;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50%;
 }
+
+input:checked + .slider {
+  background-color: var(--VeryLightGrayishBlue)
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+
