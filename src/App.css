@@ -107,7 +107,6 @@ input:checked + .slider:before {
 }
 
 
-
 .card-price {
   font-size: 50px;
   font-weight: 700;
@@ -142,21 +141,36 @@ input:checked + .slider:before {
 
 .card-price-button {
   margin-top: 0.5rem;
-  background-color: transparent;
-  border: 1px solid hsl(237, 63%, 64%);
-  color: hsl(237, 63%, 64%);
+  border: none;
+  background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  color: var(--VeryLightGrayishBlue);
   padding: 10px 32px;
   width: 80%;
-  border-radius: 12px;
+  border-radius: 8px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  cursor: pointer;
+  border: 1px solid ;
+  font-size: var(--FontSize);
+}
+
+.card-price-button:hover {
+  background: none;
+  color: hsl(237, 63%, 64%);
+  background-color: transparent;
+  border: 1px solid hsl(237, 63%, 64%);
+
 }
 
 .primary-card .card-price-button {
   background-color: transparent;
   border: 1px solid var(--VeryLightGrayishBlue);
-  color: var(--VeryLightGrayishBlue)
+  color: var(--VeryLightGrayishBlue);
 }
 
+.primary-card .card-price-button:hover {
+  background-color: var(--VeryLightGrayishBlue);
+  color: hsl(237, 63%, 64%);
+}
 /* -------------- */
