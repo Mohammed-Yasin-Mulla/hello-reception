@@ -43,11 +43,19 @@ body {
 
 /* --------- */
 
+.page-heading{
+  color: var(--GrayishBlue)
+}
+
 .pricing {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
+}
+
+.toggle-label{
+  color: var(--LightGrayishBlue)
 }
 
 .switch {
@@ -121,6 +129,7 @@ input:checked + .slider:before {
   min-height: 400px;
   background-color: white;
   border-radius: 15px;
+  color: var(--GrayishBlue)
 }
 
 .primary-card {
@@ -128,6 +137,7 @@ input:checked + .slider:before {
   color: white;
   min-height: 450px;
 }
+
 
 .side-card {
   min-width: 325px;

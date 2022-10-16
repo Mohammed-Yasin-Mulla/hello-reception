@@ -6,12 +6,12 @@ export function ToggleSwitch(props: ToggleSwitchProps) {
   const { setToggle } = props;
 
   const onChangeHandle = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setToggle(e.target.checked ?   "monthly" : "annually");
+    setToggle(e.target.checked ? "monthly" : "annually");
   };
 
   return (
     <div className="pricing">
-      <span>Annually</span>
+      <span className="toggle-label">Annually</span>
       <label className="switch">
         <input
           type="checkbox"
@@ -20,7 +20,7 @@ export function ToggleSwitch(props: ToggleSwitchProps) {
         />
         <span className="slider"></span>
       </label>
-      <span>Monthly</span>
+      <span className="toggle-label">Monthly</span>
     </div>
   );
 }
